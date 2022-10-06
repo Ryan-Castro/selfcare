@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+hr{
+    background-color:  #A5A1A1;
+}
+nav{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>div>h2{
+    display: inline;
+}
+
+nav>ul{
+    color: #5CA720;
+    list-style: none;
+    display: flex;
+}
+nav li{
+    margin-right: 20px;
+}
+
+header>img{
+    width: 100%;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+}
+
+.card>.image{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image>img{
+    width: 500px;
+}
+
+.card>h3{
+    margin-top: 10px;
+}
+
+.preco > span{
+    color: #5CA720;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+    background-color: #F9F9F9;
+}
+footer>ul{
+    list-style: none;
+}
+footer li{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+footer form{
+    display: flex;
+}
+footer h2{
+    margin-bottom: 5px;
+}
+
+footer #email{
+    padding: 10px;
+}
+footer #inscrever{
+    border: none;
+    background-color: #5CA720;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 0px 5px 5px 0px ;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #F9F9F9;
+}
+.footer img{
+    width: 50px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 1100px){
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 770px){
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer div{
+        margin-top: 30px;
+    }
+}
+
